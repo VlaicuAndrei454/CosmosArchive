@@ -9,9 +9,9 @@
     <style>
         :root {
             --bg-color: #050505;
-            --accent-color: #f8f9fa; /* Aproape de alb pur pentru contrast */
-            --text-muted: #63b3ed;  /* Albastru deschis pentru accente */
-            --nasa-gray: #cbd5e0;   /* Gri deschis pentru text lung */
+            --accent-color: #f8f9fa;
+            --text-muted: #63b3ed;
+            --nasa-gray: #cbd5e0;
         }
 
         body { 
@@ -23,7 +23,6 @@
 
         h1, .display-date { font-family: 'Playfair Display', serif; }
 
-        /* Stil pentru Input - Minimalist */
         input[type="date"] {
             background: transparent;
             border: none;
@@ -33,7 +32,7 @@
             font-size: 1.5rem;
             text-align: center;
             padding: 10px;
-            color-scheme: dark; /* Face iconița de calendar albă pe unele browsere */
+            color-scheme: dark;
         }
         input[type="date"]:focus { background: transparent; color: white; border-color: white; box-shadow: none; outline: none; }
 
@@ -49,7 +48,6 @@
         }
         .btn-explore:hover { background: white; color: black; }
 
-        /* Imaginea NASA - Hero Style */
         .img-container {
             position: relative;
             margin-top: 50px;
@@ -64,7 +62,6 @@
             border-radius: 4px;
         }
 
-        /* Textul Istoric - Editorial Style */
         .history-overlay {
             border-left: 2px solid #333;
             padding-left: 35px;
@@ -104,7 +101,6 @@
             text-align: justify;
         }
 
-        /* Scrollbar personalizat */
         #nasaDescription::-webkit-scrollbar { width: 3px; }
         #nasaDescription::-webkit-scrollbar-track { background: transparent; }
         #nasaDescription::-webkit-scrollbar-thumb { background: #444; border-radius: 10px; }
@@ -127,11 +123,11 @@
 <div class="container min-vh-100 d-flex flex-column justify-content-center pb-5">
     <div class="row pt-5">
         <div class="col-12 text-center">
-            <span class="date-label mb-3 d-block">Arhiva Timpului (date din 1995)</span>
+            <span class="date-label mb-3 d-block">Arhiva Timpului (1995 - Prezent)</span>
             <h1 class="display-1 mb-4">Cosmos Archive</h1>
             
             <div class="mt-4 mb-5">
-                <input type="date" id="dateInput">
+                <input type="date" id="dateInput" min="1995-06-16">
                 <br>
                 <button id="travelBtn" class="btn btn-explore">Caută în trecut</button>
             </div>
