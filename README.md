@@ -3,7 +3,7 @@
 
 
 ### 🔗 Link-uri Proiect
-- **Prezentare Video (YouTube):** 
+- **Prezentare Video (YouTube):** https://youtu.be/qrKrTzS_xk0
 - **Aplicație Publicată (GitHub Pages):** https://github.com/VlaicuAndrei454/CosmosArchive
 
 ---
