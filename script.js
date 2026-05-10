@@ -1,5 +1,5 @@
 import { NASA_API } from './config.js';
-const NASA_API_KEY = NASA_API;
+const NASA_API_KEY = "DEMO_KEY";
 
 const btn = document.getElementById('travelBtn');
 const loader = document.getElementById('loader');
