@@ -19,7 +19,12 @@ Proiectul utilizează două servicii cloud de tip REST API:
 1.  **NASA APOD (Astronomy Picture of the Day):** Furnizează imaginea astronomică a zilei și o explicație profesională scrisă de astronomi.
 2.  **Numbers API:** Un serviciu care returnează curiozități și fapte istorice bazate pe numere sau date calendaristice.
 
-## 4. Flux de date
+## 4. Autentificare și Autorizare
+**NASA API**: Necesită autentificare prin API Key (transmis ca parametru în URL). Am configurat aplicația pentru a folosi o cheie privată stocată într-un fișier de configurare protejat.
+
+**Numbers API**: Nu necesită autentificare (Public API), dar necesită trecerea printr-un CORS Proxy (precum AllOrigins) pentru a permite accesul din browser.
+
+## 5. Flux de date
 
 ### Metode HTTP și Request/Response
 Ambele servicii sunt interogate folosind metoda **HTTP GET**.
